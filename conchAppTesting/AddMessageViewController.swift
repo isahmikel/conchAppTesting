@@ -9,7 +9,7 @@ import UIKit
 
 class AddMessageViewController: UIViewController {
 
-    let vc = ViewController()
+    var vc:ViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +23,8 @@ class AddMessageViewController: UIViewController {
     @IBAction func addMessageButton(_ sender: Any) {
         if let message = messageTextField.text
         {
-            //message isn't being added to messageArr
-            vc.messageArr.append(message)
+            vc?.messageArr.append(message)
+            navigationController?.popViewController(animated: true)
         }
     }
     
