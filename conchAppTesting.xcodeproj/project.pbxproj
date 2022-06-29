@@ -14,6 +14,7 @@
 		B620A11B286C10550060D27C /* conchAppTesting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B620A119286C10550060D27C /* conchAppTesting.xcdatamodeld */; };
 		B620A11D286C10590060D27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B620A11C286C10590060D27C /* Assets.xcassets */; };
 		B620A120286C10590060D27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B620A11E286C10590060D27C /* LaunchScreen.storyboard */; };
+		B620A128286C13440060D27C /* AddMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620A127286C13440060D27C /* AddMessageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B620A11C286C10590060D27C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B620A11F286C10590060D27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B620A121286C10590060D27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B620A127286C13440060D27C /* AddMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMessageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				B620A112286C10550060D27C /* SceneDelegate.swift */,
 				B620A114286C10550060D27C /* ViewController.swift */,
 				B620A116286C10550060D27C /* Main.storyboard */,
+				B620A127286C13440060D27C /* AddMessageViewController.swift */,
 				B620A11C286C10590060D27C /* Assets.xcassets */,
 				B620A11E286C10590060D27C /* LaunchScreen.storyboard */,
 				B620A121286C10590060D27C /* Info.plist */,
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B620A115286C10550060D27C /* ViewController.swift in Sources */,
+				B620A128286C13440060D27C /* AddMessageViewController.swift in Sources */,
 				B620A111286C10550060D27C /* AppDelegate.swift in Sources */,
 				B620A11B286C10550060D27C /* conchAppTesting.xcdatamodeld in Sources */,
 				B620A113286C10550060D27C /* SceneDelegate.swift in Sources */,
