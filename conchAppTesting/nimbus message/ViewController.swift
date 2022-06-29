@@ -14,11 +14,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         messageLabel.text = ""
-        messageArr = createMsgs()
+        getMessages()
     }
     
-    func createMsgs() -> [String] {
-        ["hello :)", "you are doing great!", "have a beautiful day :)", "hello friend!"]
+    let ogMessageArr = ["go at your own pace, we'll handle the rest :)", "hello friend :)", "have a beautiful day :)"]
+    
+    func getMessages() {
+        if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
+            if let coreDataMessages = try? context.fetch(Message.fetchRequest()) as? [Message]
+            {
+                messageArr =  coreDataMessages
+                
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -29,12 +37,20 @@ class ViewController: UIViewController {
         print("view did appear \(messageArr)")
     }
 
-    var messageArr: [String] = []
+    var messageArr: [Message] = []
     
     @IBOutlet weak var messageLabel: UILabel!
     
     @IBAction func genNewButton(_ sender: Any) {
-        messageLabel.text = messageArr[Int.random(in : 0..<messageArr.count)]
+        let randNum = Int.random(in : 0..<(messageArr.count + ogMessageArr.count))
+        if (randNum < messageArr.count)
+        {
+            messageLabel.text = messageArr[randNum].name
+        }
+        else
+        {
+            messageLabel.text = ogMessageArr[randNum - messageArr.count]
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
