@@ -15,6 +15,7 @@
 		B620A11D286C10590060D27C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B620A11C286C10590060D27C /* Assets.xcassets */; };
 		B620A120286C10590060D27C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B620A11E286C10590060D27C /* LaunchScreen.storyboard */; };
 		B620A128286C13440060D27C /* AddMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620A127286C13440060D27C /* AddMessageViewController.swift */; };
+		B620A12D286D48190060D27C /* UpNextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620A12C286D48190060D27C /* UpNextViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		B620A11F286C10590060D27C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B620A121286C10590060D27C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B620A127286C13440060D27C /* AddMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMessageViewController.swift; sourceTree = "<group>"; };
+		B620A12C286D48190060D27C /* UpNextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpNextViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				B620A129286CA54D0060D27C /* nimbus message */,
 				B620A110286C10550060D27C /* AppDelegate.swift */,
 				B620A112286C10550060D27C /* SceneDelegate.swift */,
+				B620A12C286D48190060D27C /* UpNextViewController.swift */,
 				B620A116286C10550060D27C /* Main.storyboard */,
 				B620A11C286C10590060D27C /* Assets.xcassets */,
 				B620A11E286C10590060D27C /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B620A12D286D48190060D27C /* UpNextViewController.swift in Sources */,
 				B620A115286C10550060D27C /* ViewController.swift in Sources */,
 				B620A128286C13440060D27C /* AddMessageViewController.swift in Sources */,
 				B620A111286C10550060D27C /* AppDelegate.swift in Sources */,
