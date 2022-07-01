@@ -19,7 +19,6 @@ class AddMessageViewController: UIViewController {
 
     @IBOutlet weak var messageTextField: UITextField!
     
-    
     @IBAction func addMessageButton(_ sender: Any) {
         if let context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext {
             let newMessage = Message(entity: Message.entity(), insertInto: context)
